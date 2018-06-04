@@ -83,3 +83,15 @@ let newNamesNew = [] //tiene que ser con arreglo vacío   de ahi esto con push:
 for (let=0; i <students.length; i++){
   newNames.push(students[i].name)
 }
+
+//sumen los número 10, 20, 30, 40, 50
+//primera version
+const addition = (n1, n2, n3, n4, n5)=> {
+  return n1 + n2 + n3 + n4 + n5
+}
+//segunda version 
+const addition = (...sumandos) => {
+  console.log(sumandos)
+}
+
+//SPREAD OPERATOR (...) OPERAADOR DE PROPAGRACION LO CONVIERTE EN ARREGLO LO QUE ANTES ESTABA COMO DATOS SUELTOS
