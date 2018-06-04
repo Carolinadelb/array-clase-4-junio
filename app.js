@@ -76,3 +76,10 @@ students[0].names
 for (let i = 0; i<students.length; i++){
   console.log(students[i].name)
 }
+
+
+//por ejemplo si quiero hacer nueva variable que contenga los mismos nombres de students hago 1° una variable y 2° un for:
+let newNamesNew = [] //tiene que ser con arreglo vacío   de ahi esto con push:
+for (let=0; i <students.length; i++){
+  newNames.push(students[i].name)
+}
