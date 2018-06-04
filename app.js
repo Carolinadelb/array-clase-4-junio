@@ -161,5 +161,13 @@ const number = [1, 2 , 3, 4, 5, 8, 10, 12, 13]
  }
   //FILTER     (una copia de mi arreglo modificado, el original no se toca)
 
-  const numbers = [1, 2 , 3, 4, 5, 8, 10, 12, 13]
+ const numbers = [1, 2 , 3, 4, 5, 8, 10, 12, 13]
  const newNumbers = numbers.filter (elemento => elemento % 2 === 0);
+
+ //SORT ordena alfabeticamente   con numeros los ordena con unicode entonces queda 1, 10, 100, 2 , 5 etc
+//comparacion para ordenar de menor a mayor con dos párametros
+ const compareNumeric = (a, b) => {
+   return a - b;
+ }
+ const numbers = [1, 5, 8, 3, 10, 7, 20, 100];
+ number.sort(compareNumeric) // y devolvere los números de menor a mayor 
