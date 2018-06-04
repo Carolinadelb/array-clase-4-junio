@@ -26,8 +26,53 @@ const names = ['ale', 'aggretsuko', 'hello kitty', 'violeta', 'caro', 'otronombr
 // si solo pongo:
 //name.slice(2)  ira desde comienza la posición q pide el n°2 hasta el final
 
-      //INDEX OF
-
-
 const newNames = names.slice(2) //hará que la nueva variable sea del arreglo del nuevo slice.
 
+
+      //INDEX OF
+//busca la posición o indice del elemento que estoy buscando
+
+const cats = ['chica', 'jaspe', 'rubio', 'nena'];
+cats.indexOf('rubio'); //devuelve su posicion (2)
+cats.indexOf('mori'); // devuelve -1 porque no lo encuentra
+
+      // CONCAT
+//crea una copia del arreglo original, pero jámas toca el arreglo original verdadero:
+  cats.concat('Morri', 'canela', 'peluso');
+//si uno quiere esta version debe guardarlo en una variable:
+const newCats = cats.concat('Morri', 'canela', 'peluso');
+
+      //ARREGLO DE OBJETOS 
+//los arreglos tmb pueden tener en su interior objetos ejemplo:
+const students = [
+  {
+    names: 'violeta',
+    track: 'common core',
+    status: true
+  },
+  {
+    names: 'alejandra',
+    track: 'common core',
+    status: true
+  },
+  {
+    names: 'vane',
+    track: 'common core',
+    status: true
+  },
+  {
+    names: 'nataly',
+    track: 'common core',
+    status: true
+  }
+]
+//para acceder a un status ejemplo de vane, se debe 
+students[2].status //primero va la posicion, y luego la propiedad de esa posición.
+//otro ejemplo
+students[0].names
+
+//va a recorrer arreglo, posicion por posicion y va a sacar el nombre (porque pedimos name:
+
+for (let i = 0; i<students.length; i++){
+  console.log(students[i].name)
+}
