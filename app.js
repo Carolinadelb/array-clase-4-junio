@@ -95,3 +95,25 @@ const addition = (...sumandos) => {
 }
 
 //SPREAD OPERATOR (...) OPERAADOR DE PROPAGRACION LO CONVIERTE EN ARREGLO LO QUE ANTES ESTABA COMO DATOS SUELTOS
+
+//si es mas de un parametro tiene que ir con: (), si es uno solo puede ir solo o con parentesis este esta con ()
+
+const addition = (arr) => {
+    let suma = 0;
+    for(let i = 0; i<arr.length; i++){
+      suma += suma + arr[i];
+      //suma = suma + arr [i]
+  }
+}
+
+//REDUCE
+const arr = [1, 2, 3, 4, 5];
+const addition = (arr) => {
+  //parametros: previousValue, currentValue, index, array 
+  const reduceArr = arr.reduce((previousValue, currentValue)) => {
+    return previousValue + currentValue
+
+    console.log('el valor previo es: ${previousValue}')
+    console.log('el valor actual es: ${currentValue}')
+  }); 
+
