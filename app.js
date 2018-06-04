@@ -107,7 +107,7 @@ const addition = (arr) => {
 }
 
 //REDUCE
-const arr = [1, 2, 3, 4, 5];
+const arr = [1, 2, 3, 4, 5]; //si es con string se concatena 
 const addition = (arr) => {
   //parametros: previousValue, currentValue, index, array 
   const reduceArr = arr.reduce((previousValue, currentValue)) => {
@@ -117,3 +117,49 @@ const addition = (arr) => {
     console.log('el valor actual es: ${currentValue}')
   }); 
 
+//otro ejempĺo:
+
+const arr = ['g', 'a', 'r', 'y']; //si es con string se concatena 
+const myLove = (arr) => {
+  //parametros: previousValue, currentValue, index, array 
+  const reduceArr = arr.reduce((previousValue, currentValue)) => {
+    return previousValue + currentValue
+  
+  }); 
+  reduceArr;
+}
+
+//FOR NORMAL
+//si quiero multiplicar los numeros por 2 
+const arr = [1, 2, 3, 4, 5]; 
+let newArr = [];
+ for (let i = 0; i < arr.length; i++) {
+   newArr.push(arr[i]*2);
+   //newArr= [2, 4, 6, 8, 10]
+
+ }
+
+ // MAP
+ const arr = [1, 2, 3, 4, 5]; 
+ const multiply = arr.map((indice) =>{
+  return indice*2
+ });
+
+ //REFACTORIZO MAP (COMO ES UN PURO PARAMETRO NO NECESITA ())
+//UNO PUEDE ESCOGER SI QUIERE USAR FOR O MAP ES COSA DE UNO
+ const arr = [1, 2, 3, 4, 5]; 
+ const multiply = arr.map(indice =>
+  indice*2);
+
+ 
+const number = [1, 2 , 3, 4, 5, 8, 10, 12, 13]
+ let newNumber = [];
+ for (let i = 0; i <number.length; i++) {
+   if (numbers [i] % 2 === 0) {
+     newNumber.push(number[i]);
+   }
+ }
+  //FILTER     (una copia de mi arreglo modificado, el original no se toca)
+
+  const numbers = [1, 2 , 3, 4, 5, 8, 10, 12, 13]
+ const newNumbers = numbers.filter (elemento => elemento % 2 === 0);
